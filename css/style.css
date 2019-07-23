@@ -1,0 +1,85 @@
+body{
+	background-color:#f4f4f4;
+	color:#555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:1.6em;
+	margin:0;
+}
+
+.container{
+	width:80%;
+	margin:auto;
+    overflow:hidden;
+}
+
+#main-header{
+    text-align: center;
+}
+
+#navbar{
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#navbar ul{
+	padding:0;
+	list-style: none;
+}
+
+#navbar li{
+    display:inline;
+    transition: 0.3s;
+}
+
+#navbar a{
+    color: #555;
+	text-decoration: none;
+	font-size:18px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#navbar a span {
+    display: inline-block;
+    transition: .5s;
+}
+
+#navbar a:hover span {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg) scale(1.5);
+}
+
+#showcase{
+	background-image:url('../images/hopewell.png');
+	background-position:center right;
+    min-height:800px;
+	margin-bottom:30px;
+	text-align: center;
+}
+
+#showcase h1{
+    color:#fff;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size:50px;
+	line-height: 1.6em;
+	padding-top:30px;
+}
+
+#main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#main h1{
+    text-align: center;
+}
+
+#main img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width:350px;
+}
