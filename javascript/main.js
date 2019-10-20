@@ -20,7 +20,7 @@ var sticky = navbar.offsetTop;
 window.onscroll = function() {headerFade()};
 
 function headerFade() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop >= 20 || document.documentElement.scrollTop >= 20) {
     showcase.style.opacity = 0.2;
     showcase.style.minHeight = "20px";
     navbar.classList.add("sticky")
