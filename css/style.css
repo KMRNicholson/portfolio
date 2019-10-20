@@ -13,14 +13,20 @@ body{
     overflow:hidden;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 #main-header{
     text-align: center;
 }
 
 #navbar{
+    transition: 1s;
+    background-color:#040;
     text-align: center;
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
 #navbar ul{
@@ -34,7 +40,7 @@ body{
 }
 
 #navbar a{
-    color: #555;
+    color: #ddd;
 	text-decoration: none;
 	font-size:18px;
     margin-left: 50px;
@@ -48,15 +54,16 @@ body{
 
 #navbar a:hover span {
     -webkit-transform: rotateX(360deg);
-    transform: rotateX(360deg) scale(1.5);
+    transform: rotateX(360deg) scale(1);
 }
 
 #showcase{
 	background-image:url('../images/hopewell.png');
 	background-position:center right;
-    min-height:800px;
-	margin-bottom:30px;
-	text-align: center;
+    min-height:600px;
+    opacity: 1;
+    text-align: center;
+    transition: 1s; /* Add a transition effect (when scrolling - and font size is decreased) */
 }
 
 #showcase h1{
@@ -71,6 +78,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    margin-top: 110px;
 }
 
 #main h1{
