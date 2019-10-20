@@ -10,15 +10,23 @@ document.querySelector('#navbar').innerHTML = `
 
 document.querySelector('#main-header').innerHTML = `<section id="showcase"></section>`
 
-// When the user scrolls down 50px from the top of the document, resize the header's font size
-window.onscroll = function() {scrollFunction()};
+var navbar = document.getElementById("navbar");
+var showcase = document.getElementById("showcase");
 
-function scrollFunction() {
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// When the user scrolls down 50px from the top of the document, transform header
+window.onscroll = function() {headerFade()};
+
+function headerFade() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("showcase").style.opacity = 0.2;
-    document.getElementById("showcase").style.minHeight = "200px"
+    showcase.style.opacity = 0.2;
+    showcase.style.minHeight = "20px";
+    navbar.classList.add("sticky")
   } else {
-    document.getElementById("showcase").style.opacity = 1;
-    document.getElementById("showcase").style.minHeight = "600px"
+    showcase.style.opacity = 1;
+    showcase.style.minHeight = "600px"
+    navbar.classList.remove("sticky");
   }
 }
