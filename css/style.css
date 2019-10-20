@@ -54,9 +54,11 @@ body{
 #showcase{
 	background-image:url('../images/hopewell.png');
 	background-position:center right;
-    min-height:800px;
+    min-height:600px;
+    opacity: 1;
 	margin-bottom:30px;
-	text-align: center;
+    text-align: center;
+    transition: 1s; /* Add a transition effect (when scrolling - and font size is decreased) */
 }
 
 #showcase h1{
